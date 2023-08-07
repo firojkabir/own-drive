@@ -1,0 +1,113 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "own-drive-api",
+    "dateExported": "2023-08-07T13:06:45.865Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6f5b051d-28e1-4dfa-b5c9-7e6102424573",
+            "colId": "bdbe8667-14d0-4ffe-965a-b54b88ea3c20",
+            "containerId": "",
+            "name": "Get files",
+            "url": "{{host}}/files",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-19T18:54:02.027Z",
+            "modified": "2023-05-19T18:59:24.968Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4be8c3c9-ddb4-4df5-995c-6fa5d7df6e84",
+            "colId": "bdbe8667-14d0-4ffe-965a-b54b88ea3c20",
+            "containerId": "",
+            "name": "Get file content",
+            "url": "{{host}}/files/test05.txt",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-05-19T19:59:35.198Z",
+            "modified": "2023-08-07T13:05:04.445Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f6b92cc3-2911-422f-9f98-ce827a668f7d",
+            "colId": "bdbe8667-14d0-4ffe-965a-b54b88ea3c20",
+            "containerId": "",
+            "name": "Update a file",
+            "url": "{{host}}/files/rimon.txt",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2023-05-20T12:38:39.895Z",
+            "modified": "2023-08-07T13:03:04.839Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"newFileName\": \"rimon01.txt\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9f4ad09f-37f2-494c-9921-2aafd67f3183",
+            "colId": "bdbe8667-14d0-4ffe-965a-b54b88ea3c20",
+            "containerId": "",
+            "name": "Create file",
+            "url": "{{host}}/files",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-19T19:27:50.673Z",
+            "modified": "2023-08-07T13:04:52.325Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fileName\": \"test05.txt\",\n  \"content\": \"Myself allen shafon\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0edaedc6-ad1e-46c0-a071-3ccb62088e4a",
+            "colId": "bdbe8667-14d0-4ffe-965a-b54b88ea3c20",
+            "containerId": "",
+            "name": "nginx status changes",
+            "url": "{{host}}/nginx",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-05-20T20:24:13.398Z",
+            "modified": "2023-05-20T20:28:45.600Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"action\": \"stop\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1c84cdf9-3f13-4194-ba45-14deba057c91",
+            "colId": "bdbe8667-14d0-4ffe-965a-b54b88ea3c20",
+            "containerId": "",
+            "name": "Delete a file",
+            "url": "{{host}}/files",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-05-19T19:39:22.529Z",
+            "modified": "2023-08-07T13:05:53.175Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fileName\": \"data2.txt\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

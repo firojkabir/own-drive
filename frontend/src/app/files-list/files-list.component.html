@@ -1,0 +1,16 @@
+<h2>NGINX: {{ nginxStatus }}</h2>
+
+<form [formGroup]="messageForm">
+	<input type="text" placeholder="Input your name" formControlName="userName">
+	<input type="text" placeholder="Input your message" formControlName="message">
+</form>
+
+<button (click)="sendMessage()">Send a message</button>
+
+<div *ngFor="let fileName of files">
+	<p>{{ fileName }}</p>
+</div>
+
+<div *ngFor="let message of messages">
+	<p>{{ message.userName }}: {{ message.message }} - {{ message.sentAt }}</p>
+</div>
